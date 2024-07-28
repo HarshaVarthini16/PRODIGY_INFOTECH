@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency_converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: linear-gradient(120deg, #007bff, #d0314c);
+            height: 100vh;
+            overflow: hidden;
+            background-position: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: beige;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+        #result {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+</style>
+</head>
+<body>
+    <centre>
+    <div class="container">
+<h1 style="color: black; background-image: url('C:/Users/yesha/OneDrive/Pictures/Screenshots/Screenshot 2024-03-15 190019.png');">Currency Converter</h1>
+<p style="font-family: 'Times New Roman', Times, serif;">
+    <h2>Convert any where everywhere now!</h2>
+</p>
+    <input type="number" id="amount" placeholder="Amount">
+    <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+        <option value="CNY">CYN</option>
+        <option value="KRW">KRW</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="GBP">GBP</option>
+        <option value="OMR">OMR</option>
+
+    </select>
+    <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+        <option value="CNY">CYN</option>
+        <option value="KRW">KRW</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="GBP">GBP</option>
+        <option value="OMR">OMR</option>
+        </select>
+    <button onclick="convert()">Convert</button>
+    <div id="result">
+    </div>
+</div>
+ </centre>
+    <script src="CC.JS">
+    
+    </script>
+</body>
+</html>
