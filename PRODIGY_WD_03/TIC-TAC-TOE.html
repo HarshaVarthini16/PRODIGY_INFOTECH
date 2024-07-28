@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+  font: normal 16px comic sans ms;
+  text-align: center;
+}
+
+#tic-tac-toe {
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin: 30px auto;
+}
+
+#tic-tac-toe td {
+  border: 2px solid #000;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font: bold 60px comic sans ms;
+}
+
+#tic-tac-toe tr:first-child td {
+  border-top: none;
+}
+
+#tic-tac-toe tr:last-child td {
+  border-bottom: none;
+}
+
+#tic-tac-toe tr td:first-child {
+  border-left: none;
+}
+
+#tic-tac-toe tr td:last-child {
+  border-right: none;
+}
+
+#tic-tac-toe td.X {
+  color: #ed676b;
+}
+
+#tic-tac-toe td.O {
+  color: #23916b;
+}
+
+#scoreboard .score {
+  text-align: center;
+  font-size: 30px;
+}
+
+#scoreboard .score#player1 {
+  color: #ed676b;
+}
+
+#scoreboard .score#player2 {
+  color: #23916b;
+}
+    </style>
+
+    <title>Tic Tac Toe Game using JavaScript
+    </title>
+</head>
+
+<body>
+    <table id="scoreboard" align="center">
+        <tr>
+            <td> Player 1 </td>
+            <td width="30"> &nbsp; </td>
+            <td> Player 2 </td>
+        </tr>
+        <tr>
+            <td class="score" id="player1">
+                0
+            </td>
+            <td> &nbsp; </td>
+            <td class="score" id="player2">
+                0
+            </td>
+        </tr>
+    </table>
+    
+    <div id="placeholder"></div>
+    
+    <button onclick="restart()">
+        Reset
+    </button>
+    <select onchange="restart(this.value)">
+        <option value="2">
+            2 X 2
+        </option>
+        <option value="3" selected="">
+            3 X 3
+        </option>
+        <option value="4">
+            4 X 4
+        </option>
+        <option value="5">
+            5 X 5
+        </option>
+        <option value="6">
+            6 X 6
+        </option>
+    </select>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>
