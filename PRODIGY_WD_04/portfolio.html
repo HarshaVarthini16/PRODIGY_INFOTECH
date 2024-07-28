@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        section {
+            padding: 5em 2em 2em;
+            text-align: center;
+            min-height: 100vh;
+        }
+        
+        .home {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1em;
+        }
+        
+        .about, .skills, .projects, .contact {
+            background-color: white;
+            padding: 4em 2em;
+        }
+        
+        .about h2, .skills h2, .projects h2, .contact h2 {
+            margin-bottom: 1em;
+            color: #282c34;
+        }
+        
+        .skills ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .skills ul li {
+            background: #282c34;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+        .projects .project {
+            margin-bottom: 2em;
+        }
+        
+        .projects .project h3 {
+            color: #282c34;
+        }
+        
+        .projects .project a {
+            color: #1d72b8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 1em;
+            }
+        
+            nav ul li {
+                margin: 10px 0;
+            }
+        
+            .skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 style="background-image: url('C:/Users/yesha/OneDrive/Desktop/port.jpg');">
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello, I am Harsha Varthini </p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Harsha Varthini P .
+        I am a student studying 3rd year Btech Information Technology in VIT Vellore.</p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>DSA</li>
+            <li>Python</li>
+            <li>C and C++</li>
+            <li>Java</li>
+            /* and etc */
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1 </h3>
+            <p>Currency Converter.(your project description).</p>
+            <a href="/give your github link/">View on GitHub</a>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+    </section>
+</h1>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js">
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
