@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style src="style.css">
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+:root {
+  --primary-color: rgb(92, 188, 244);
+  --primary-color-darker: rgb(85, 112, 84);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.watch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 10rem;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 400;
+  height: 50px;
+  width: 335px;
+}
+
+h2.paused {
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  margin-top: 20px;
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </style> 
+
+    <title>Simple Stopwatch using JavaScript</title>
+</head>
+
+<body>
+    <section class="container">
+        <center>
+        <div class="watch">
+            <h2 id="watch">00:00:00:00</h2>
+        </div>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </center>
+    </section>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>
