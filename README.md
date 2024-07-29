@@ -37,3 +37,17 @@ Technologies Used
 HTML
 CSS
 JavaScript
+
+**Project 4: Portfolio**
+Description
+A personal portfolio website showcasing your skills, projects, and accomplishments as a web developer.
+
+Features
+Home page with a captivating headline and summary of skills.
+About Me section with detailed background, education, and professional experience.
+Projects section showcasing your projects with descriptions and links.
+Contact section with contact information.
+Technologies Used
+HTML
+CSS
+JavaScript
