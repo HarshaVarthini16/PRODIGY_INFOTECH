@@ -62,4 +62,18 @@ A personal portfolio website showcasing your skills, projects, and accomplishmen
 
   ![4c6308d7-381e-4efa-b0e9-9ec964172b36](https://github.com/user-attachments/assets/b0fcd69e-f660-4bf1-8b8d-7a7032d35dc2)
 
-  
+  ## PROJECT 5: Weather App Website
+
+This Weather App Website fetches and displays current weather information based on user-inputted locations. It leverages the Weatherstack API to retrieve real-time weather data and presents it in a user-friendly and visually appealing interface.
+
+## Features
+
+- Real-time weather information for any user-specified location.
+- Displays current temperature, weather description, humidity.
+## TECHNOLOGIES USED
+* HTML
+* CSS
+* JAVASCRIPT
+* API
+
+  ![338973ba-974b-4fbd-b03f-a4d40c0169fc](https://github.com/user-attachments/assets/a6462187-6179-419e-b3f7-cc6c482901ce)
